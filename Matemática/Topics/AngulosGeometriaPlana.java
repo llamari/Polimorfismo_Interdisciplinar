@@ -1,4 +1,8 @@
+import java.util.Scanner;
+
 public class AngulosGeometriaPlana extends Topico {
+    Scanner teclado = new Scanner(System.in);
+
     @Override
     public void Explicacao() {
         System.out.println("Na geometria plana, ângulos são muito usados em figuras como triângulos e polígonos:");
@@ -9,8 +13,30 @@ public class AngulosGeometriaPlana extends Topico {
 
     @Override
     public void Questoes() {
+        //Questão 1
         System.out.println("1. Qual é a soma dos ângulos internos de um hexágono?");
+        int resposta1 = teclado.nextInt();
+        if (resposta1 == 720) {
+            System.out.println("Parabéns! Resposta correta! A soma dos ângulos internos de um hexágono é 720°.");
+        } else{
+            System.out.println("Que pena... Resposta incorreta. A soma dos ângulos internos de um hexágono é 720°.");
+        }
+
+        //Questão 2
         System.out.println("2. Qual é a medida de cada ângulo interno de um triângulo equilátero?");
+        int resposta2 = teclado.nextInt();
+        if (resposta2 == 60) {
+            System.out.println("Parabéns! Resposta correta! A medida de cada ângulo interno de um triângulo equilátero é 60°.");
+        } else{
+            System.out.println("Que pena... Resposta incorreta. A medida de cada ângulo interno de um triângulo equilátero é 60°.");
+        }
+
         System.out.println("3. Quantos graus mede cada ângulo externo de um octógono regular?");
+        int resposta3 = teclado.nextInt();
+        if (resposta3 == 45) {
+            System.out.println("Parabéns! Resposta correta! A medida de cada ângulo externo de um octógono regular é 45°.");
+        } else{
+            System.out.println("Que pena... Resposta incorreta. A medida de cada ângulo externo de um octógono regular é 45°");
+        }
     }
 }

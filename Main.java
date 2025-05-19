@@ -12,7 +12,7 @@ public class Main {
         switch (escolha) {
             case "matemática":
                 Matematica matematica = new Matematica();
-
+                
                 break;
         
             case "química":

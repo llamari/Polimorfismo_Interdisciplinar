@@ -15,8 +15,9 @@ public class TiposDeAngulos extends Topico {
 
     @Override
     public void Questoes() {
+        //Questão 1
         System.out.println("1. Classifique um ângulo de 45°. (agudo, reto, obtuso, raso, giro completo)");
-        String resposta1 = teclado.nextLine();
+        String resposta1 = teclado.nextLine(); //le a resposta
 
         if (resposta1 == "agudo" || resposta1=="Agudo") {
             System.out.println("Correto! Um ângulo de 45° é um ângulo agudo. Parabéns!");
@@ -24,13 +25,24 @@ public class TiposDeAngulos extends Topico {
             System.out.println("Incorreto! Um ângulo de 45° é um ângulo agudo.");
         }
 
+        //Questão 2
         System.out.println("2. Um ângulo de 150° é agudo, reto ou obtuso?");
-        String resposta2 = teclado.nextLine();
+        String resposta2 = teclado.nextLine(); //le a resposta
 
         if (resposta2 == "obtuso" || resposta2 == "Obtuso") {
             System.out.println("Correto! Um ângulo de 150° é um ângulo obtuso. Parabéns!");
         } else{
             System.out.println("Incorreto! Um ângulo de 150° é um ângulo obtuso.");
+        }
+
+        //Questão 3
+        System.out.println("3. Quantos graus tem um ângulo reto?");
+        int resposta3 = teclado.nextInt(); //le a resposta
+
+        if (resposta3 == 90) {
+            System.out.println("Correto! Um ângulo reto é um ângulo de 90°. Parabéns!");
+        } else{
+            System.out.println("Incorreto! Um ângulo reto é um ângulo de 90°.");
         }
     }
 }
