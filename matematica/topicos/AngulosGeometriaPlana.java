@@ -1,10 +1,13 @@
+package matematica.topicos;
 import java.util.Scanner;
+
+import geral.Topico;
 
 public class AngulosGeometriaPlana extends Topico {
     Scanner teclado = new Scanner(System.in);
 
     @Override
-    public void Explicacao() {
+    public void explicacao() {
         System.out.println("Na geometria plana, ângulos são muito usados em figuras como triângulos e polígonos:");
         System.out.println("- A soma dos ângulos internos de um triângulo é sempre 180°.");
         System.out.println("- A soma dos ângulos internos de um polígono é dada por (n - 2) × 180°, onde n é o número de lados.");
@@ -12,7 +15,7 @@ public class AngulosGeometriaPlana extends Topico {
     }
 
     @Override
-    public void Questoes() {
+    public void questoes() {
         //Questão 1
         System.out.println("1. Qual é a soma dos ângulos internos de um hexágono?");
         int resposta1 = teclado.nextInt();

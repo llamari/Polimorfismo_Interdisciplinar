@@ -1,10 +1,12 @@
+package matematica.topicos;
 import java.util.Scanner;
+import geral.Topico;
 
 public class AngulosPorRetas extends Topico {
     Scanner teclado = new Scanner(System.in);
 
     @Override
-    public void Explicacao() {
+    public void explicacao() {
         System.out.println("Quando duas retas se cruzam, formam ângulos com propriedades especiais:");
         System.out.println("- Ângulos opostos pelo vértice: têm a mesma medida.");
         System.out.println("- Ângulos complementares: somam 90°.");
@@ -12,7 +14,7 @@ public class AngulosPorRetas extends Topico {
     }
 
     @Override
-    public void Questoes() {
+    public void questoes() {
         //Questão 1
         System.out.println("1. Se dois ângulos são opostos pelo vértice e um mede 70°, qual é a medida do outro?");
         int resposta1 = teclado.nextInt(); //le resposta

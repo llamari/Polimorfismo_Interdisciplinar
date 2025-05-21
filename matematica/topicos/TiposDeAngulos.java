@@ -1,10 +1,12 @@
+package matematica.topicos;
 import java.util.Scanner;
+import geral.Topico;
 
 public class TiposDeAngulos extends Topico {
     Scanner teclado = new Scanner(System.in);
 
     @Override
-    public void Explicacao() {
+    public void explicacao() {
         System.out.println("Ângulos básicos são classificados de acordo com a sua medida:");
         System.out.println("- Agudo: menor que 90°");
         System.out.println("- Reto: igual a 90°");
@@ -14,12 +16,12 @@ public class TiposDeAngulos extends Topico {
     }
 
     @Override
-    public void Questoes() {
+    public void questoes() {
         //Questão 1
         System.out.println("1. Classifique um ângulo de 45°. (agudo, reto, obtuso, raso, giro completo)");
         String resposta1 = teclado.nextLine(); //le a resposta
 
-        if (resposta1 == "agudo" || resposta1=="Agudo") {
+        if (resposta1.equalsIgnoreCase("agudo")) {
             System.out.println("Correto! Um ângulo de 45° é um ângulo agudo. Parabéns!");
         } else{
             System.out.println("Incorreto! Um ângulo de 45° é um ângulo agudo.");
@@ -29,7 +31,7 @@ public class TiposDeAngulos extends Topico {
         System.out.println("2. Um ângulo de 150° é agudo, reto ou obtuso?");
         String resposta2 = teclado.nextLine(); //le a resposta
 
-        if (resposta2 == "obtuso" || resposta2 == "Obtuso") {
+        if (resposta2.equalsIgnoreCase("obtuso")) {
             System.out.println("Correto! Um ângulo de 150° é um ângulo obtuso. Parabéns!");
         } else{
             System.out.println("Incorreto! Um ângulo de 150° é um ângulo obtuso.");
