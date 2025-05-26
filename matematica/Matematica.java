@@ -1,6 +1,6 @@
 package matematica;
-import java.util.Scanner;
 
+import java.util.Scanner;
 import geral.Topico;
 import matematica.topicos.AngulosGeometriaPlana;
 import matematica.topicos.AngulosPorRetas;
@@ -11,8 +11,12 @@ public class Matematica {
     Topico topico;
     String respostaQuestoes;
 
-    public void Geral(){
-        System.out.println("1 - Ângulos na geometria plana\n2 - Ângulos formados por retas\n3 - Tipos de ângulos\nQual tópico você gostaria de ver?");
+    public void Geral() {
+        System.out.println("Você selecionou a matéria 'Matemática'!");
+        System.out.println("O conteúdo que irá estudar a seguir é sobre: Ângulos. Vamos começar!\n");
+        System.out.println(
+                "1 - Ângulos na geometria plana\n2 - Ângulos formados por retas\n3 - Tipos de ângulos\nQual tópico você gostaria de ver?");
+                
         int resposta = teclado.nextInt();
         teclado.nextLine();
 
@@ -42,14 +46,13 @@ public class Matematica {
                 topico.explicacao();
                 System.out.println("Você deseja fazer exercícios sobre esse assunto? (sim/não)");
                 respostaQuestoes = teclado.nextLine();
-                System.out.println(respostaQuestoes);
-                if (respostaQuestoes.equalsIgnoreCase("sim")) {
+                if (respostaQuestoes == "sim") {
                     topico.questoes();
                 }
                 break;
-        
+
             default:
-                System.out.println("A opção inserida não está entre as alternativas");
+                System.out.println("A opção inserida não está entre as alternativas. Tente novamente...");
                 break;
         }
     }

@@ -1,4 +1,5 @@
 package matematica.topicos;
+
 import java.util.Scanner;
 import geral.Topico;
 
