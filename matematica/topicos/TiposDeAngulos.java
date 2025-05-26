@@ -8,6 +8,7 @@ public class TiposDeAngulos extends Topico {
 
     @Override
     public void explicacao() {
+        //explicação do conteúdo
         System.out.println("Ângulos básicos são classificados de acordo com a sua medida:");
         System.out.println("- Agudo: menor que 90°");
         System.out.println("- Reto: igual a 90°");
@@ -20,6 +21,7 @@ public class TiposDeAngulos extends Topico {
     public void questoes() {
         //Questão 1
         System.out.println("1. Classifique um ângulo de 45°. (agudo, reto, obtuso, raso, giro completo)");
+        //45 é menor que 90. 45° é um ângulo agudo
         String resposta1 = teclado.nextLine(); //le a resposta
 
         if (resposta1.equalsIgnoreCase("agudo")) {
@@ -30,6 +32,7 @@ public class TiposDeAngulos extends Topico {
 
         //Questão 2
         System.out.println("2. Um ângulo de 150° é agudo, reto ou obtuso?");
+        //150° é maior que 90°. 150 é obtuso
         String resposta2 = teclado.nextLine(); //le a resposta
 
         if (resposta2.equalsIgnoreCase("obtuso")) {
@@ -40,6 +43,7 @@ public class TiposDeAngulos extends Topico {
 
         //Questão 3
         System.out.println("3. Quantos graus tem um ângulo reto?");
+        //90°
         int resposta3 = teclado.nextInt(); //le a resposta
 
         if (resposta3 == 90) {

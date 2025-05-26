@@ -8,6 +8,7 @@ public class AngulosGeometriaPlana extends Topico {
 
     @Override
     public void explicacao() {
+        //explicação do conteúdo
         System.out.println("Na geometria plana, ângulos são muito usados em figuras como triângulos e polígonos:");
         System.out.println("- A soma dos ângulos internos de um triângulo é sempre 180°.");
         System.out.println(
@@ -19,6 +20,7 @@ public class AngulosGeometriaPlana extends Topico {
     public void questoes() {
         // Questão 1
         System.out.println("1. Qual é a soma dos ângulos internos de um hexágono?");
+        //(6-2) × 180 = 4 × 180 = 720
         int resposta1 = teclado.nextInt();
         if (resposta1 == 720) {
             System.out.println("Parabéns! Resposta correta! A soma dos ângulos internos de um hexágono é 720°.");
@@ -27,7 +29,8 @@ public class AngulosGeometriaPlana extends Topico {
         }
 
         // Questão 2
-        System.out.println("2. Qual é a medida de cada ângulo interno de um triângulo equilátero?");
+        System.out.println("2. Qual é a medida de cada ângulo interno de um triângulo equilátero (triângulo com os 3 lados iguais)?");
+        //Se a soma dos ângulos internos de um triângulo é 180 e um triângulo equilátero tem 3 ângulos iguais, cada ângulo é 180/3 = 60°
         int resposta2 = teclado.nextInt();
         if (resposta2 == 60) {
             System.out.println(
@@ -38,6 +41,7 @@ public class AngulosGeometriaPlana extends Topico {
         }
 
         System.out.println("3. Quantos graus mede cada ângulo externo de um octógono regular?");
+        //360/8 = 45°
         int resposta3 = teclado.nextInt();
         if (resposta3 == 45) {
             System.out.println(

@@ -8,6 +8,7 @@ public class Pintura extends Topico {
 
     @Override
     public void explicacao() {
+        //Explicação sobre pintura
         System.out.println(
                 "A pintura é a arte de criar imagens usando tintas sobre superfícies como tela, papel ou parede.");
         System.out.println(
@@ -22,14 +23,15 @@ public class Pintura extends Topico {
                 "B) Alegria e energia\n" +
                 "C) Tristeza e silêncio\n" +
                 "D) Medo e suspense");
+        //Na pintura e pensando também na teoria das cores, as cores quentes representam alegria e energia
         String resposta1 = teclado.nextLine();
 
         if (resposta1.equalsIgnoreCase("B")) {
             System.out.println(
-                    "Parabéns! Resposta correta! A dança pode ser considerada uma forma de expressão porque transmite emoções por meio do corpo.");
+                    "Parabéns! Resposta correta! Na pintura, as cores quentes transmitem alegria e energia.");
         } else {
             System.out.println(
-                    "Que pena... Resposta incorreta. A dança pode ser considerada uma forma de expressão porque transmite emoções por meio do corpo.");
+                    "Que pena... Resposta incorreta. Na pintura, as cores quentes transmitem alegria e energia.");
         }
 
         // Questão 2
@@ -38,14 +40,15 @@ public class Pintura extends Topico {
                 "B) Mostrar paisagens naturais\n" +
                 "C) Não representar figuras reais e usar formas livres \n" +
                 "D) Imitar uma fotografia ");
+        //pinturas abstratas utilizam formas livres e não tentam retratar a realidade com fidelidade
         String resposta2 = teclado.nextLine();
 
         if (resposta2.equalsIgnoreCase("C")) {
             System.out.println(
-                    "Parabéns! Resposta correta! Um estilo de dança popular no Brasil é o samba.");
+                    "Parabéns! Resposta correta! Uma pintura abstrata não representa figuras reais, além de usar formas livres.");
         } else {
             System.out.println(
-                    "Que pena... Resposta incorreta. Um estilo de dança popular no Brasil é o samba.");
+                    "Que pena... Resposta incorreta. Uma pintura abstrata não representa figuras reais, além de usar formas livres.");
         }
 
         // Questão 3
@@ -55,13 +58,14 @@ public class Pintura extends Topico {
                         "B) Tinta acrílica\n" +
                         "C) Argila\n" +
                         "D) Mármore");
+        //A tinta acrílica é geralmente usada na pintura. Os outros estão relacionados a outros tipos de artes
         String resposta3 = teclado.nextLine();
         if (resposta3.equalsIgnoreCase("B")) {
             System.out.println(
-                    "Parabéns! Resposta correta! Todas as ocasiões a dança costuma estar presente, não somente uma em particular.");
+                    "Parabéns! Resposta correta! A tinta acrílica é normalmente usada na pintura.");
         } else {
             System.out.println(
-                    "Que pena... Resposta incorreta. Todas as ocasiões a dança costuma estar presente, não somente uma em particular.");
+                    "Que pena... Resposta incorreta. A tinta acrílica é normalmente usada na pintura.");
         }
     }
 }

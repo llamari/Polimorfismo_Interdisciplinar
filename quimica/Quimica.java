@@ -13,8 +13,9 @@ public class Quimica {
     String respostaQuestoes;
 
     public void Geral() {
+        //Apresentação e menuzinho
         System.out.println("Você selecionou a matéria 'Química'!");
-        System.out.println("O conteúdo que irá estudar a seguir é sobre: Funções inorgânicas. Vamos começar!\n");
+        System.out.println("O conteúdo que irá estudar a seguir é sobre: Funções inorgânicas. Vamos começar!");
         System.out.println("1 - Ácidos\n2 - Bases\n3 - Óxidos\n4 - Sais\nQual tópico você gostaria de ver?");
 
         int resposta = teclado.nextInt();
@@ -22,8 +23,11 @@ public class Quimica {
 
         switch (resposta) {
             case 1:
+            //se ele quiser ver ácidos, mostrar explicaçã de ácidos
                 topico = new Acidos();
                 topico.explicacao();
+
+                //questões de ácidos
                 System.out.println("Você deseja fazer exercícios sobre esse assunto? (sim/não)");
                 respostaQuestoes = teclado.nextLine();
                 if (respostaQuestoes == "sim") {
@@ -32,8 +36,11 @@ public class Quimica {
                 break;
 
             case 2:
+            //chama a função para explicar bases
                 topico = new Bases();
                 topico.explicacao();
+
+                //questões pra praticar bases
                 System.out.println("Você deseja fazer exercícios sobre esse assunto? (sim/não)");
                 respostaQuestoes = teclado.nextLine();
                 if (respostaQuestoes.equalsIgnoreCase("sim")) {
@@ -42,8 +49,11 @@ public class Quimica {
                 break;
 
             case 3:
+            //chama a função que explica os oxidos
                 topico = new Oxidos();
                 topico.explicacao();
+
+                //atividade de óxidos
                 System.out.println("Você deseja fazer exercícios sobre esse assunto? (sim/não)");
                 respostaQuestoes = teclado.nextLine();
                 if (respostaQuestoes.equalsIgnoreCase("sim")) {
@@ -52,8 +62,11 @@ public class Quimica {
                 break;
 
             case 4:
+                //explicação de sais
                 topico = new Sais();
                 topico.explicacao();
+
+                //exercicios de sais
                 System.out.println("Você deseja fazer exercícios sobre esse assunto? (sim/não)");
                 respostaQuestoes = teclado.nextLine();
                 if (respostaQuestoes.equalsIgnoreCase("sim")) {
