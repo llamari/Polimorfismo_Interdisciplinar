@@ -24,7 +24,7 @@ public class Danca extends Topico {
                 "D) É sempre feita em grupo");
         String resposta1 = teclado.nextLine();
 
-        if (resposta1 == "C") {
+        if (resposta1.equalsIgnoreCase("C")) {
             System.out.println(
                     "Parabéns! Resposta correta! A dança pode ser considerada uma forma de expressão porque transmite emoções por meio do corpo.");
         } else {
@@ -40,7 +40,7 @@ public class Danca extends Topico {
                 "D) Samba ");
         String resposta2 = teclado.nextLine();
 
-        if (resposta2 == "D") {
+        if (resposta2.equalsIgnoreCase("D")) {
             System.out.println(
                     "Parabéns! Resposta correta! Um estilo de dança popular no Brasil é o samba.");
         } else {
@@ -56,7 +56,7 @@ public class Danca extends Topico {
                         "C) Somente em escolas de dança\n" +
                         "D) Apenas em casamentos");
         String resposta3 = teclado.nextLine();
-        if (resposta3 == "B") {
+        if (resposta3.equalsIgnoreCase("B")) {
             System.out.println(
                     "Parabéns! Resposta correta! Todas as ocasiões a dança costuma estar presente, não somente uma em particular.");
         } else {

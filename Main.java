@@ -8,16 +8,16 @@ public class Main {
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("Bem-vindo(a)! Você está em um sistema de estudos.");
-        System.out.println("Qual matéria você deseja praticar no momento? (matemática, química, artes):");
+        System.out.println("Qual matéria você deseja praticar no momento? (matematica, quimica, artes):");
         String escolha = teclado.nextLine();
 
         switch (escolha) {
-            case "matemática" :
+            case "matematica":
                 Matematica matematica = new Matematica();
                 matematica.Geral();
                 break;
 
-            case "química":
+            case "quimica":
                 Quimica quimica = new Quimica();
                 quimica.Geral();
                 break;

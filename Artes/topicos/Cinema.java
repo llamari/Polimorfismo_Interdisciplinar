@@ -25,7 +25,7 @@ public class Cinema extends Topico {
                 "D) Mostrar o talento dos músicos");
         String resposta1 = teclado.nextLine();
 
-        if (resposta1 == "C") {
+        if (resposta1.equalsIgnoreCase("C")) {
             System.out.println(
                     "Parabéns! Resposta correta! O principal objetivo do uso da trilha sonora é criar emoção e reforçar o clima das cenas.");
         } else {
@@ -41,7 +41,7 @@ public class Cinema extends Topico {
                 "D) O documentário usa efeitos especiais");
         String resposta2 = teclado.nextLine();
 
-        if (resposta2 == "B") {
+        if (resposta2.equalsIgnoreCase("B")) {
             System.out.println(
                     "Parabéns! Resposta correta! O documentário apresenta fatos reais.");
         } else {
@@ -57,7 +57,7 @@ public class Cinema extends Topico {
                         "C) Diretor\n" +
                         "D) Editor");
         String resposta3 = teclado.nextLine();
-        if (resposta3 == "C") {
+        if (resposta3.equalsIgnoreCase("C")) {
             System.out.println(
                     "Parabéns! Resposta correta! O Diretor é responsável por dirigir os atores e organizar as cenas no cinema.");
         } else {

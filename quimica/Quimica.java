@@ -36,7 +36,7 @@ public class Quimica {
                 topico.explicacao();
                 System.out.println("Você deseja fazer exercícios sobre esse assunto? (sim/não)");
                 respostaQuestoes = teclado.nextLine();
-                if (respostaQuestoes == "sim") {
+                if (respostaQuestoes.equalsIgnoreCase("sim")) {
                     topico.questoes();
                 }
                 break;
@@ -46,7 +46,7 @@ public class Quimica {
                 topico.explicacao();
                 System.out.println("Você deseja fazer exercícios sobre esse assunto? (sim/não)");
                 respostaQuestoes = teclado.nextLine();
-                if (respostaQuestoes == "sim") {
+                if (respostaQuestoes.equalsIgnoreCase("sim")) {
                     topico.questoes();
                 }
                 break;
@@ -56,7 +56,7 @@ public class Quimica {
                 topico.explicacao();
                 System.out.println("Você deseja fazer exercícios sobre esse assunto? (sim/não)");
                 respostaQuestoes = teclado.nextLine();
-                if (respostaQuestoes == "sim") {
+                if (respostaQuestoes.equalsIgnoreCase("sim")) {
                     topico.questoes();
                 }
                 break;
