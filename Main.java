@@ -19,7 +19,7 @@ public class Main {
             //apresentação básica
             System.out.println("Bem-vindo(a)! Você está em um sistema de estudos.");
             System.out.println("Qual matéria você deseja praticar no momento? (matematica, quimica, artes):");
-            String escolha = teclado.nextLine();
+            String escolha = teclado.nextLine().toLowerCase();;
             escolhas.add(escolha);
 
             switch (escolha) {
@@ -51,7 +51,12 @@ public class Main {
             System.out.println("Deseja continuar no programa? (sim/nao): ");
             String op = teclado.nextLine();
             if (op.equalsIgnoreCase("nao")) {
-                //se não, muda x e o programa para.
+                //Se ele não quiser continuar, mostra o histórico de matérias estudadas e encerra o programa
+                System.out.println("Segue abaixo o histórico de matérias estudadas:");
+                for (String materia : escolhas) {
+                    System.out.println("- " + materia);
+                }
+                System.out.println("Obrigada por usar o sistema de estudos! Até a próxima!");
                 x = 1;
             }
         }
