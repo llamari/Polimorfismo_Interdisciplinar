@@ -36,7 +36,5 @@ Após rodar o sistema, ele te perguntará a matéria de interesse (matematica, q
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
 * **Beatriz Vinguerti Xavier** - *Idealização e programação* - [Bea-Xavier](https://github.com/Bea-Xavier)
 * **Sara Lamari Silva** - *Idealização e programação* - [llamari](https://github.com/llamari)
